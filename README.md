@@ -1,108 +1,99 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Quiz Show
+<p>
+</p>
 
-Welcome Keeganw3,
+# Features (Edit this as it is required.)
+## Navigation bar
+* Featured at the top of the webpage, it provides the user with links to each section of the website.
+* This allows users to quickly find the section they are looking for on all devices.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+## The landing page
+* Contains an image from the game containing the title and farm that they will help re-build.
+* This section introduces the user to Stardew Valley through the prominently displayed hero-image that presents both the name of the game and the parts of the game.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+## Game Area
+* This section describes the basics of the game, its plot and why you the player character have decided to come to Stardew Valley.
+* The user will see the ideas and themes of the game. This should make them interested in seeing more of the website and what else the game has to offer.
 
-## Gitpod Reminders
+## Question Area
+* This section shows the user more in-depth activities that are available to them while playing the game.
+* This section may change as more activities are brought into the game as it is still being updated.
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+## Score Area
+* This section tells the user about the community surrounding Stardew Valley and the creativity they’ve shown and inspire in others.
+* This will change as more types of farms are displayed on social media.
 
-`python3 -m http.server`
+## Sign-Up section
+* This will allow the user to receive tips about starting the game or a link to buy the game. 
+* The user can specify which they would like to do by ticking the appropriate box and submitting a full name and email address.
 
-A blue button should appear to click: _Make Public_,
+## The Footer
+* This footer provides links to all the relevant social media sites for Stardew Valley. The links open into new tabs to allow for easy navigation.
+* The footer is valuable to the user as it allows them to keep up to date on updates for the game and to join the community that helps make it special via social media.
 
-Another blue button should appear to click: _Open Browser_.
+# Features left to Implement
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+# Testing (Edit this as it is required.)
+## Validator Testing
+### HTML
+* No errors were found through W3C validator. There is one warning pertaining to line 37 because it doesn't have a header but this isn't needed because this section contains the hero image.
+### CSS
+* No errors were found through the W3C CSS validator and I was given the code for this icon to prove this.
+<p>
+    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss"
+            alt="Valid CSS!"/>
+    </a>
+</p>
 
-A blue button should appear to click: _Make Public_,
+## Accessibilty Testing (Edit this as it is required. Probably just change screenshot)
+This is a screenshot taken from my first time doing an accessibilty test on Developer Tools Lighthouse.
 
-Another blue button should appear to click: _Open Browser_.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+## Manual Testing (Edit this as it is required.)
+I tested the media queries by manually adjusting the screen size from roughly 500-1000px to make sure the correct changes were taking place above or below each specific screen size.
 
-To log into the Heroku toolbelt CLI:
+At 500px and below all text and images are displayed vertically because it fits this screen size well.
+For media queries 768px and 1000px and above, the text and images in the about and why its cool sections are displayed horizontally. The community section images are displayed side by side in pairs.
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+## Unfixed Bugs
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+# Deployment
+For all of the below steps you must head to Github.
+* Log into Github
+* Load up the required repository.
+* Go to Settings and scroll down to Github pages (this will open up a new webpage).
+* Click on the dropdown menu called "None" and then select "Master Branch".
+* A second dropdown menu should appear that says "/root" and a button that says Save.
+* Click Save and now the link for the website has been made.
 
-------
+## Forking
+* Log into Github
+* Load up the required repository.
+* In the top right of the screen below the profile icon there is a fork button, click this.
+* The repository should now be copied onto your Github account.
 
-## Release History
+## Cloning
+* Log into Github and choose a repository.
+* Click on the green code button.
+* You will be given three ways to clone the code. If you're using https, click “Clone with https” and copy the link.
+* Open the terminal and type in the command "git clone" followed by a space and the copied url.
+* The repository will now be cloned onto the computer.
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+# Acknowledgements
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+## Credits (Edit this as it is required.)
+* 
+* My mentor Brian Macharia who supported me and provided me with both feedback and solutions to problems I faced while creating the website.
+* My lecturer Simen Daehlin who provided me feedback on my initial wireframe designs.
+* The people from slack room who answered my questions on when I needed it.
+* Code institute for the classes, sources and tutors that they provided me.
+* Bootstrap for the media query sizes that I used: https://getbootstrap.com/docs/4.1/layout/overview/
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+## Content (Edit this as it is required.)
+* Font awesome provided the icons in the footer.
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
-
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
-
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
-
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
-
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
+## Media
+* Ex. Hero-image came from https://www.thenorthernecho.co.uk/resources/images/12262346/
+* 
