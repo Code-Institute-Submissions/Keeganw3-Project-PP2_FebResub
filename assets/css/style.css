@@ -2,7 +2,11 @@
 .heading {
     text-align: center;
     letter-spacing: 6px;
-    font-size: 280%;
+    font-size: 200%;
+    border-style: solid;
+    border-color: black;
+    border-width: 10px 10px 10px 10px;
+    border-radius: 20%;
 }
 
 /* Button text */
