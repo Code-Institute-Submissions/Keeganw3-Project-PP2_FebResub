@@ -1,6 +1,14 @@
 /* Header */
 .heading {
     text-align: center;
-    letter-spacing: 4px;
+    letter-spacing: 6px;
     font-size: 280%;
 }
+
+/* Button text */
+body {
+    font-size: 140%;
+    letter-spacing: 4px;
+}
+
+/* Question text */
