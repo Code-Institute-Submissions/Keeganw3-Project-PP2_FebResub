@@ -3,29 +3,20 @@
 </p>
 
 # Features (Edit this as it is required.)
-## Navigation bar
-* Featured at the top of the webpage, it provides the user with links to each section of the website.
-* This allows users to quickly find the section they are looking for on all devices.
-
 ## The landing page
 * Contains an image from the game containing the title and farm that they will help re-build.
 * This section introduces the user to Stardew Valley through the prominently displayed hero-image that presents both the name of the game and the parts of the game.
 
 ## Game Area
-* This section describes the basics of the game, its plot and why you the player character have decided to come to Stardew Valley.
-* The user will see the ideas and themes of the game. This should make them interested in seeing more of the website and what else the game has to offer.
+* This area is for the placement of the answers. 
+* The user can select an answer to the question being asked in the question container.
+ 
+## Question Container
+* This section shows the questions being asked to the user.
 
-## Question Area
-* This section shows the user more in-depth activities that are available to them while playing the game.
-* This section may change as more activities are brought into the game as it is still being updated.
-
-## Score Area
-* This section tells the user about the community surrounding Stardew Valley and the creativity they’ve shown and inspire in others.
+## Score Board
+* This section shows the user the number of answers that they have gotten correct.
 * This will change as more types of farms are displayed on social media.
-
-## Sign-Up section
-* This will allow the user to receive tips about starting the game or a link to buy the game. 
-* The user can specify which they would like to do by ticking the appropriate box and submitting a full name and email address.
 
 ## The Footer
 * This footer provides links to all the relevant social media sites for Stardew Valley. The links open into new tabs to allow for easy navigation.
