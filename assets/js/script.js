@@ -1,41 +1,50 @@
 const questionContainer = document.getElementById('question-container')
-console.log(questionContainer)
 
 const questions = [
     {
         'question': 'What is the best language?',
-        'a': 'JS',
-        'b': 'HTML',
-        'c': 'CSS',
-        'd': 'Python',
-        'correctAnswer': 'd'
+        'A': 'JS',
+        'B': 'HTML',
+        'C': 'CSS',
+        'D': 'Python',
+        'correctAnswer': 'D'
       },
       {
         'question': 'Who is the president?',
-        'a': 'John',
-        'b': 'James',
-        'c': 'Joe',
-        'd': 'Micheal',
-        'correctAnswer': 'a'
+        'A': 'John',
+        'B': 'James',
+        'C': 'Joe',
+        'D': 'Micheal',
+        'correctAnswer': 'A'
       }  
     ]
 
-console.log(questions)
-questionContainer.innerHTML = generateQuestionHTML(questions[0])
+questionContainer.innerHTML = displayQuestions(questions[0])
 
 function displayQuestions(question) {
-    let html = `
-      <h2>${question.question}</h2>
-      <ul>
-        <button id="a" data-value="a" onclick="checkAnswer(this)">A - ${question.a}</button>
-        <button id="b" data-value="b" onclick="checkAnswer(this)">B - ${question.b}</button>
-        <button id="c" data-value="c" onclick="checkAnswer(this)">C - ${question.c}</button>
-        <button id="d" data-value="d" onclick="checkAnswer(this)">D - ${question.d}</button>
-      </ul>`   
-    return html
+    let display = `
+    <h2>${question.question}</h2>
+      <ol>
+        <button id="A" data-value="A" onclick="checkAnswer(this)">A - ${question.A}</button>
+        <button id="B" data-value="B" onclick="checkAnswer(this)">B - ${question.B}</button>
+        <button id="C" data-value="C" onclick="checkAnswer(this)">C - ${question.C}</button>
+        <button id="D" data-value="D" onclick="checkAnswer(this)">D - ${question.D}</button>
+      </ol>`   
+    return display
   }
 
-// if questions.
+/**
+ * This function checks if the answer chosen is correct.
+ */
+function checkAnswer(buttonElement) {
+  if (questions[0].correctAnswer == buttonElement.id){
+    alert("Correct! You clicked on button: " + buttonElement.id)
+  }
+  else {
+    alert("Incorrect! You clicked on button: " + buttonElement.id)
+  }
+  runGame()
+}
 
 /**  
  *  This will show the user their total score out of the 
