@@ -19,7 +19,12 @@ const questions = [
       }  
     ]
 
-questionContainer.innerHTML = displayQuestions(questions[0])
+const questionNumber = 0;
+questionContainer.innerHTML = displayQuestions(questions[questionNumber])
+
+/**
+ * 
+ */
 
 function displayQuestions(question) {
     let display = `
@@ -36,6 +41,7 @@ function displayQuestions(question) {
 /**
  * This function checks if the answer chosen is correct.
  */
+
 function checkAnswer(buttonElement) {
   if (questions[0].correctAnswer == buttonElement.id){
     alert("Correct! You clicked on button: " + buttonElement.id)
@@ -47,7 +53,26 @@ function checkAnswer(buttonElement) {
 }
 
 /**  
+ *  The game will either end or continue based on the number 
+ * of questions the user has answered.
+*/
+
+function runGame(questionNumber) {
+  if (questions.length == questionNumber) {
+    results();
+} else {
+  questionNumber++;
+  questionContainer.innerHTML = displayQuestions(questions[questionNumber])
+}
+}
+
+/**  
  *  This will show the user their total score out of the 
  * questions asked
 */
-// Results()
+
+// results(correct) {
+//  if (correct <= 8) {
+//  "You answered + + answers correctly! Congratulations!"
+// } else if
+// }
