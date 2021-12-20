@@ -1,20 +1,84 @@
 const questionContainer = document.getElementById('question-container');
 const questions = [
     {
-        'question': 'What is the best language?',
-        'A': 'JS',
-        'B': 'HTML',
-        'C': 'CSS',
-        'D': 'Python',
-        'correctAnswer': 'D'
+        'question': "Since 2011, Brendan O'Carroll has played the title character in what sitcom?",
+        'A': "Mrs. Brown's Boys",
+        'B': "Mrs. Brown's Babes",
+        'C': "Mrs. Brown's Baboons",
+        'D': "Mrs. Brown's Bust Ups",
+        'correctAnswer': 'A'
       },
       {
-        'question': 'Who is the president?',
-        'A': 'John',
-        'B': 'James',
-        'C': 'Joe',
-        'D': 'Micheal',
+        'question': 'Which of these is a breed of spaniel?',
+        'A': 'King James',
+        'B': 'King John',
+        'C': 'King Charles',
+        'D': 'King George',
+        'correctAnswer': 'C'
+      },  
+      {
+        'question': 'According to Robert Burns, which food is the “Great chieftain o’ the pudding-race”?',
+        'A': 'Teacake',
+        'B': 'Haggis',
+        'C': 'Bacon roll',
+        'D': 'sticky toffee pudding',
+        'correctAnswer': 'B'
+      }, 
+      {
+        'question': "What is the name of the character played by Daisy Ridley in ‘Star Wars: The Rise of Skywalker’?",
+        'A': 'Doh',
+        'B': 'Rey',
+        'C': 'Mee',
+        'D': 'Farr',
+        'correctAnswer': 'B'
+      },  
+      {
+        'question': 'Which of these is the title of a famous artwork by Tracey Emin?',
+        'A': 'Our Settee',
+        'B': 'Your Bench',
+        'C': 'Her Desk',
+        'D': 'My Bed',
+        'correctAnswer': 'D'
+      }, 
+      {
+        'question': 'The annual half-marathon the Great North Run starts in which UK city?',
+        'A': 'Newscastle',
+        'B': 'Sheffield',
+        'C': 'Liverpool',
+        'D': 'Leeds',
         'correctAnswer': 'A'
+      },  
+      {
+        'question': 'For what reason did Professor Robert Kelly gain internet fame in 2017?',
+        'A': 'Mistaken identity on news',
+        'B': 'Chasing after his dog',
+        'C': 'Kids gatecrashed interview',
+        'D': 'Trying to catch a bat',
+        'correctAnswer': 'C'
+      },  
+      {
+        'question': 'A character named Ralph is elected leader of a group of boys at the beginning of which book?',
+        'A': 'Lord of the Flies',
+        'B': 'A CLockwork Orange',
+        'C': 'The Jungle Book',
+        'D': 'Brave New World',
+        'correctAnswer': 'A'
+      },  
+      {
+        'question': "In Hokusai’s print ‘The Great Wave’, which mountain is depicted in the background?",
+        'A': 'Mount Emei',
+        'B': 'Mount Kailash',
+        'C': 'Mount Fuji',
+        'D': 'Mount Sinai',
+        'correctAnswer': 'C'
+      },  
+      {
+        'question': "According to the Highway Code, what shape is the standard sign giving the order to ‘Stop’?",
+        'A': 'Pentagon',
+        'B': 'Hexagon',
+        'C': 'Heptagon',
+        'D': 'Octagon',
+        'correctAnswer': 'D'
       }  
     ]
 
@@ -94,3 +158,16 @@ function runGame(questionNumber) {
 //  "You answered" + correct + "answers correctly! I'm impressed you got so many wrong."
 //}  
 // }
+
+//function submissionRules() {
+//  for (let button of buttons) {
+//    button.addEventListener("click", function() {
+//        if (this.getAttribute("data-type") === "submit") {
+//            checkAnswer();
+//        } else {
+//            let gameType = this.getAttribute("data-type");
+//            runGame(gameType)
+//        }
+//    })
+//}
+//}
