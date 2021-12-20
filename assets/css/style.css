@@ -16,7 +16,9 @@ body {
 }
 
 /* Question Container */
-
+#question-container {
+    text-align: center;
+}
 
 /* Score Board */
 h3 {

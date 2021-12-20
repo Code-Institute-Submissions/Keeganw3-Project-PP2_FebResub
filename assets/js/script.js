@@ -22,7 +22,8 @@ let questionNumber = 0;
 questionContainer.innerHTML = displayQuestions(questions[questionNumber])
 
 /**
- * 
+ * This function displays the questions and possible answers for
+ * the user to pick.
  */
 
 function displayQuestions(question) {
@@ -31,7 +32,8 @@ function displayQuestions(question) {
     return `<button class="option" id="${option}" data-value="${option}">${option} - ${question.option}</button>
     `
   });
-  console.log(buttons)
+  document.getElementById("question-container").innerHTML = buttons
+  console.log(document.getElementById("question-container").innerHTML)
   let display = `
     <h2>${question.question}</h2>
       <ol>
@@ -43,8 +45,8 @@ function displayQuestions(question) {
     });
       return display
   }
-  console.log(displayQuestions(0))
-  /**
+  // console.log(displayQuestions(0))
+ /**
  * This function checks if the answer chosen is correct and 
  * increases the number of correct or incorrect answers.
  */
@@ -77,9 +79,18 @@ function runGame(questionNumber) {
   console.log(questions[questionNumber])
 }
 }
-
-// results(correct) {
-//  if (correct <= 8) {
-//  "You answered + score + answers correctly! Congratulations!"
-// } else if
+/**
+ * This code will give your results from the quiz based 
+ * on the number of correct answers.
+ */
+// results() {
+//  if (checkAnswer(correct) <= 8) {
+//  "You answered" + correct + "answers correctly! Congratulations!"
+//} else if (checkAnswer(correct) <= 5) {
+//  "You answered" + correct + "answers correctly! Good Job!"
+//} else if (checkAnswer(correct) < 3) {
+//  "You answered" + correct + "answers correctly! You could do better."
+//} else if (checkAnswer(correct) >= 3) {
+//  "You answered" + correct + "answers correctly! I'm impressed you got so many wrong."
+//}  
 // }

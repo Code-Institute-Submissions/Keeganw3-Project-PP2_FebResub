@@ -3,26 +3,29 @@
 </p>
 
 # Features (Edit this as it is required.)
-## The landing page
-* Contains an image from the game containing the title and farm that they will help re-build.
-* This section introduces the user to Stardew Valley through the prominently displayed hero-image that presents both the name of the game and the parts of the game.
+## Question Container
+* This section shows the questions being asked to the user.
+(Add image here)
 
 ## Game Area
 * This area is for the placement of the answers. 
 * The user can select an answer to the question being asked in the question container.
- 
-## Question Container
-* This section shows the questions being asked to the user.
+(Add image here)
 
 ## Score Board
 * This section shows the user the number of answers that they have gotten correct.
 * This will change as more types of farms are displayed on social media.
+(Add image here)
 
-## The Footer
-* This footer provides links to all the relevant social media sites for Stardew Valley. The links open into new tabs to allow for easy navigation.
-* The footer is valuable to the user as it allows them to keep up to date on updates for the game and to join the community that helps make it special via social media.
+## Results Page
+* This tells the user their overall results from the quiz.
+(Add image here)
 
 # Features left to Implement
+## Results page 
+* This would open a new page that would tell the user what their score was and the amount of money they won.
+## Animated header
+* This would flash at the user to how the game show Who Wants To Be a Millionaire Logo did.
 
 # Testing (Edit this as it is required.)
 ## Validator Testing
@@ -77,8 +80,8 @@ For all of the below steps you must head to Github.
 ## Credits (Edit this as it is required.)
 * 
 * My mentor Brian Macharia who supported me and provided me with both feedback and solutions to problems I faced while creating the website.
-* My lecturer Simen Daehlin who provided me feedback on my initial wireframe designs.
-* The people from slack room who answered my questions on when I needed it.
+* My lecturer Simen Daehlin who helped me to better write my code and solve a couple problems I had run into.
+* The people from slack room who answered my questions when I needed it.
 * Code institute for the classes, sources and tutors that they provided me.
 * Bootstrap for the media query sizes that I used: https://getbootstrap.com/docs/4.1/layout/overview/
 
