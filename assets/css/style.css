@@ -15,4 +15,10 @@ body {
     letter-spacing: 4px;
 }
 
-/* Question text */
+/* Question Container */
+
+
+/* Score Board */
+h3 {
+    text-align: center;
+}

@@ -44,16 +44,21 @@ function displayQuestions(question) {
       return display
   }
   console.log(displayQuestions(0))
-/**
- * This function checks if the answer chosen is correct.
+  /**
+ * This function checks if the answer chosen is correct and 
+ * increases the number of correct or incorrect answers.
  */
 
 function checkAnswer(buttonElement) {
   if (questions[questionNumber].correctAnswer == buttonElement.id){
-    alert("Correct! You clicked on button: " + buttonElement.id)
+    alert("Correct! You clicked on button: " + buttonElement.id);
+    let correct = parseInt(document.getElementById("score").innerText);
+    document.getElementById("score").innerText = ++correct;
   }
   else {
-    alert("Incorrect! You clicked on button: " + buttonElement.id)
+    alert("Incorrect! You clicked on button: " + buttonElement.id);
+    let incorrect = parseInt(document.getElementById("incorrect").innerText);
+    document.getElementById("incorrect").innerText = ++incorrect;
   }
   runGame(questionNumber);
 }
@@ -72,17 +77,6 @@ function runGame(questionNumber) {
   console.log(questions[questionNumber])
 }
 }
-
-/**  
- * This will show the user their total score out of the 
- * questions asked.
- * increaseScore(score) {
- *     if (== correct.Answer)
- *         score++;
- *     else
- *     
- * }
-*/
 
 // results(correct) {
 //  if (correct <= 8) {
