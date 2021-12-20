@@ -1,5 +1,4 @@
-const questionContainer = document.getElementById('question-container')
-
+const questionContainer = document.getElementById('question-container');
 const questions = [
     {
         'question': 'What is the best language?',
@@ -19,7 +18,7 @@ const questions = [
       }  
     ]
 
-const questionNumber = 0;
+let questionNumber = 0;
 questionContainer.innerHTML = displayQuestions(questions[questionNumber])
 
 /**
@@ -27,29 +26,36 @@ questionContainer.innerHTML = displayQuestions(questions[questionNumber])
  */
 
 function displayQuestions(question) {
-    let display = `
+  const options = ["A", "B", "C", "D"]
+  const buttons = options.forEach(option => {
+    return `<button class="option" id="${option}" data-value="${option}">${option} - ${question.option}</button>
+    `
+  });
+  console.log(buttons)
+  let display = `
     <h2>${question.question}</h2>
       <ol>
-        <button id="A" data-value="A" onclick="checkAnswer(this)">A - ${question.A}</button>
-        <button id="B" data-value="B" onclick="checkAnswer(this)">B - ${question.B}</button>
-        <button id="C" data-value="C" onclick="checkAnswer(this)">C - ${question.C}</button>
-        <button id="D" data-value="D" onclick="checkAnswer(this)">D - ${question.D}</button>
-      </ol>`   
-    return display
+      ${buttons}
+      </ol>`
+      const optionsRef = Array.from(document.querySelectorAll(".option"));
+      optionsRef.forEach(button => {
+        button.addEventListener("click", checkAnswer(this))  
+    });
+      return display
   }
-
+  console.log(displayQuestions(0))
 /**
  * This function checks if the answer chosen is correct.
  */
 
 function checkAnswer(buttonElement) {
-  if (questions[0].correctAnswer == buttonElement.id){
+  if (questions[questionNumber].correctAnswer == buttonElement.id){
     alert("Correct! You clicked on button: " + buttonElement.id)
   }
   else {
     alert("Incorrect! You clicked on button: " + buttonElement.id)
   }
-  runGame()
+  runGame(questionNumber);
 }
 
 /**  
@@ -62,17 +68,24 @@ function runGame(questionNumber) {
     results();
 } else {
   questionNumber++;
-  questionContainer.innerHTML = displayQuestions(questions[questionNumber])
+  questionContainer.innerHTML = displayQuestions(questions[questionNumber]);
+  console.log(questions[questionNumber])
 }
 }
 
 /**  
- *  This will show the user their total score out of the 
- * questions asked
+ * This will show the user their total score out of the 
+ * questions asked.
+ * increaseScore(score) {
+ *     if (== correct.Answer)
+ *         score++;
+ *     else
+ *     
+ * }
 */
 
 // results(correct) {
 //  if (correct <= 8) {
-//  "You answered + + answers correctly! Congratulations!"
+//  "You answered + score + answers correctly! Congratulations!"
 // } else if
 // }
