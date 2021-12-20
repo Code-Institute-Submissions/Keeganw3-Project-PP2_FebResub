@@ -20,6 +20,12 @@ body {
     text-align: center;
 }
 
+/* Game Area */
+.submit {
+    margin-left: 45%;
+    
+}
+
 /* Score Board */
 h3 {
     text-align: center;
