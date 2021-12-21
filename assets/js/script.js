@@ -82,8 +82,8 @@ const questions = [{
 ]
 
 let questionNumber = 0;
-console.log(questions[questionNumber])
-questionContainer.innerHTML = displayQuestions(questions[questionNumber])
+console.log(questions.length)
+//questionContainer.innerHTML = displayQuestions(questions[questionNumber])
 
 /**
  * This function displays the questions and possible answers for
@@ -91,21 +91,31 @@ questionContainer.innerHTML = displayQuestions(questions[questionNumber])
  */
 
 function displayQuestions(question) {
-    const options = ["A", "B", "C", "D"]
-    const buttons = options.forEach(option => {
-        questionContainer.innerHTML += `<button class="option" id="${option}" data-value="${option}">${option} - ${question[option]}</button>
-    `
-    });
-    console.log(question.question);
-    let display = `
-    <h2>${question.question}</h2>`
-    const optionsRef = Array.from(document.querySelectorAll(".option"));
-    optionsRef.forEach(button => {
-        button.addEventListener("click", checkAnswer);
-    });
-    return display
-}
+  const options = ["A", "B", "C", "D"];
 
+  let questionElement = document.createElement("h2");
+  questionElement.innerText = question.question;
+  questionContainer.appendChild(questionElement);
+  console.log(questionContainer.appendChild(questionElement));
+
+  let buttonsContainer = document.createElement("div");
+  buttonsContainer.id = "buttons-container";
+  buttonsContainer.classList.add("buttons-container");
+  questionContainer.appendChild(buttonsContainer);
+  console.log(questionContainer.appendChild(buttonsContainer));
+
+  options.forEach(option => {
+    let btn = document.createElement("button");
+    btn.addEventListener("click", checkAnswer);
+    btn.id = option;
+    btn.classList.add("option");
+    btn.innerText = `${option} - ${question[option]}`;
+    buttonsContainer.appendChild(btn);
+    console.log(buttonsContainer.appendChild(btn));
+    return questionElement
+  });
+}
+console.log(displayQuestions(questions[questionNumber]));
 /**
  * This function checks if the answer chosen is correct and 
  * increases the number of correct or incorrect answers.
@@ -131,12 +141,13 @@ function checkAnswer(e) {
  */
 
 function runGame() {
+    questionNumber++;
+    console.log(questionNumber);
     if (questions.length == questionNumber) {
         results();
     } else {
-        questionNumber++;
         questionContainer.innerHTML = displayQuestions(questions[questionNumber]);
-        console.log(questions[questionNumber]);
+        console.log(displayQuestions(questions[questionNumber]));
     }
 }
 /**
@@ -145,13 +156,14 @@ function runGame() {
  */
 
 function results() {
-    if (checkAnswer(correct) <= 8) {
-        alert("You answered" + correct + "answers correctly! Congratulations!");
-    } else if (checkAnswer(correct) < 5) {
-        alert("You answered" + correct + "answers correctly! Good Job!");
-    } else if (checkAnswer(correct) < 3) {
-        alert("You answered" + correct + "answers correctly! You could do better.");
+    if (score.innerText >= 8) {
+        alert("You answered " + score.innerText + " answers correctly! Congratulations!");
+    } else if (score.innerText > 5) {
+        alert("You answered " + score.innerText + " answers correctly! Good Job!");
+    } else if (score.innerText > 3) {
+        alert("You answered " + score.innerText + " answers correctly! You could do better.");
     } else {
-        alert("You answered" + correct + "answers correctly! I'm impressed you got so many wrong.");
+        alert("You answered " + score.innerText + " answers correctly! I'm impressed you got so many wrong.");
     }
+    document. location. reload()
 }
