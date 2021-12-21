@@ -83,7 +83,7 @@ const questions = [{
 
 let questionNumber = 0;
 console.log(questions.length)
-//questionContainer.innerHTML = displayQuestions(questions[questionNumber])
+// questionContainer.innerHTML = displayQuestions(questions[questionNumber])
 
 /**
  * This function displays the questions and possible answers for
@@ -115,7 +115,7 @@ function displayQuestions(question) {
     //return btn
   });
 }
-console.log(displayQuestions(questions[questionNumber]));
+//console.log(displayQuestions(questions[questionNumber]));
 /**
  * This function checks if the answer chosen is correct and 
  * increases the number of correct or incorrect answers.
