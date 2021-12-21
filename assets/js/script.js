@@ -1,5 +1,9 @@
+let questionNumber = 0;
 const questionContainer = document.getElementById('question-container');
-const questions = [{
+let questions = [];
+function runGame() {
+questionNumber = 0;
+questions = [{
         'question': "Since 2011, Brendan O'Carroll has played the title character in what sitcom?",
         'A': "Mrs. Brown's Boys",
         'B': "Mrs. Brown's Babes",
@@ -80,9 +84,22 @@ const questions = [{
         'correctAnswer': 'D'
     }
 ]
-
-let questionNumber = 0;
-questionContainer.innerHTML = displayQuestions(questions[questionNumber])
+questionContainer.innerHTML = displayQuestions(questions[questionNumber]);
+console.log(displayQuestions(questions[questionNumber]));
+getNextQuestion();
+}
+    function getNextQuestion() {
+    questionNumber++;
+    console.log(questionNumber);
+    if (questions.length == questionNumber) {
+        results();
+    } else {
+        console.log(5);
+        questionContainer.innerHTML = displayQuestions(questions[questionNumber]);
+        displayQuestions(questions[questionNumber]).splice(0);
+        
+    }
+}
 
 /**
  * This function displays the questions and possible answers for
@@ -95,13 +112,11 @@ function displayQuestions(question) {
   let questionElement = document.createElement("h2");
   questionElement.innerText = question.question;
   questionContainer.appendChild(questionElement);
-  console.log(questionContainer.appendChild(questionElement));
 
   let buttonsContainer = document.createElement("div");
   buttonsContainer.id = "buttons-container";
   buttonsContainer.classList.add("buttons-container");
   questionContainer.appendChild(buttonsContainer);
-  console.log(questionContainer.appendChild(buttonsContainer));
 
   options.forEach(option => {
     let btn = document.createElement("button");
@@ -110,7 +125,6 @@ function displayQuestions(question) {
     btn.classList.add("option");
     btn.innerText = `${option} - ${question[option]}`;
     buttonsContainer.appendChild(btn);
-    console.log(buttonsContainer.appendChild(btn));
   });
   checkAnswer();
 }
@@ -139,16 +153,7 @@ function checkAnswer(e) {
  * of questions the user has answered.
  */
 
-function runGame() {
-    questionNumber++;
-    console.log(questionNumber);
-    if (questions.length == questionNumber) {
-        results();
-    } else {
-        questionContainer.innerHTML = displayQuestions(questions[questionNumber]);
-        //console.log(displayQuestions(questions[questionNumber]))
-    }
-}
+
 /**
  * This code will give your results from the quiz based 
  * on the number of correct answers.
