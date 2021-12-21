@@ -82,8 +82,7 @@ const questions = [{
 ]
 
 let questionNumber = 0;
-console.log(questions.length)
-// questionContainer.innerHTML = displayQuestions(questions[questionNumber])
+questionContainer.innerHTML = displayQuestions(questions[questionNumber])
 
 /**
  * This function displays the questions and possible answers for
@@ -112,10 +111,10 @@ function displayQuestions(question) {
     btn.innerText = `${option} - ${question[option]}`;
     buttonsContainer.appendChild(btn);
     console.log(buttonsContainer.appendChild(btn));
-    //return btn
   });
+  checkAnswer();
 }
-//console.log(displayQuestions(questions[questionNumber]));
+// console.log(displayQuestions(questions[questionNumber]));
 /**
  * This function checks if the answer chosen is correct and 
  * increases the number of correct or incorrect answers.
@@ -147,7 +146,6 @@ function runGame() {
         results();
     } else {
         questionContainer.innerHTML = displayQuestions(questions[questionNumber]);
-        console.log(displayQuestions(questions[questionNumber]));
     }
 }
 /**
