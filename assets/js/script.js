@@ -114,7 +114,7 @@ function displayQuestions(question) {
   });
   checkAnswer();
 }
-// console.log(displayQuestions(questions[questionNumber]));
+displayQuestions(questions[questionNumber]);
 /**
  * This function checks if the answer chosen is correct and 
  * increases the number of correct or incorrect answers.
@@ -146,6 +146,7 @@ function runGame() {
         results();
     } else {
         questionContainer.innerHTML = displayQuestions(questions[questionNumber]);
+        //console.log(displayQuestions(questions[questionNumber]))
     }
 }
 /**

@@ -24,11 +24,25 @@ body {
 }
 
 /* Game Area */
-.submit {
-    margin-left: 45%;
+#A {
+    background-color: #000000;
+    color: #ffff00;
 }
 
+#B {
+    
+}
+
+#C {
+    
+}
+
+#D {
+    
+}
 /* Score Board */
-h3 {
+
+p {
     text-align: center;
+    clear: both;
 }
