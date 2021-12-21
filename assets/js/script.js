@@ -105,6 +105,7 @@ function displayQuestions(question) {
     });
     return display
 }
+
 /**
  * This function checks if the answer chosen is correct and 
  * increases the number of correct or incorrect answers.
@@ -143,27 +144,14 @@ function runGame() {
  * on the number of correct answers.
  */
 
-results() {
+function results() {
     if (checkAnswer(correct) <= 8) {
-        alert("You answered" + correct + "answers correctly! Congratulations!")
-    } else if (checkAnswer(correct) <= 5) {
-        alert("You answered" + correct + "answers correctly! Good Job!")
+        alert("You answered" + correct + "answers correctly! Congratulations!");
+    } else if (checkAnswer(correct) < 5) {
+        alert("You answered" + correct + "answers correctly! Good Job!");
     } else if (checkAnswer(correct) < 3) {
-        alert("You answered" + correct + "answers correctly! You could do better.")
-    } else if (checkAnswer(correct) >= 3) {
-        alert("You answered" + correct + "answers correctly! I'm impressed you got so many wrong.")
+        alert("You answered" + correct + "answers correctly! You could do better.");
+    } else {
+        alert("You answered" + correct + "answers correctly! I'm impressed you got so many wrong.");
     }
 }
-
-//function submissionRules() {
-//  for (let button of buttons) {
-//    button.addEventListener("click", function() {
-//        if (this.getAttribute("data-type") === "submit") {
-//            checkAnswer();
-//        } else {
-//            let gameType = this.getAttribute("data-type");
-//            runGame(gameType)
-//        }
-//    })
-//}
-//}
