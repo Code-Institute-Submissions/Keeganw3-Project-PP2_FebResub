@@ -112,7 +112,7 @@ function displayQuestions(question) {
     btn.innerText = `${option} - ${question[option]}`;
     buttonsContainer.appendChild(btn);
     console.log(buttonsContainer.appendChild(btn));
-    return questionElement
+    //return btn
   });
 }
 console.log(displayQuestions(questions[questionNumber]));
