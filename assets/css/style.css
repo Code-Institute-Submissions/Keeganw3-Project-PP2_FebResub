@@ -28,7 +28,6 @@ body {
     grid-template-columns: repeat(2, auto);
     gap: 10px;
     margin: 20px;
-
 }
 
 button {
@@ -44,23 +43,41 @@ button {
     color: yellow;
 }
 
+#A:hover {
+    background-color: black;
+    color: blue;
+}
+
+
 #B {
     background-color: blue;
     color: yellow;
+}
 
+#B:hover {
+    background-color: black;
+    color: blue;
 }
 
 #C {
     background-color: blue;
     color: yellow;
+}
 
+#C:hover {
+    background-color: black;
+    color: blue;
 }
 
 #D {
     background-color: blue;
     color: yellow;
-
 } 
+
+#D:hover {
+    background-color: black;
+    color: blue;
+}
 
 /* Score Board */
 p {
