@@ -10,7 +10,7 @@
     border-radius: 20%;
 }
 
-/* Button text */
+/* Question Container */
 body {
     font-size: 140%;
     letter-spacing: 4px;
@@ -18,31 +18,82 @@ body {
     background-color: #000000;
 }
 
-/* Question Container */
 #question-container {
     text-align: center;
 }
 
 /* Game Area */
-#A {
-    background-color: #000000;
-    color: #ffff00;
+.buttons-container {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin: 20px;
+
 }
 
-/*#B {
-    
+button {
+    border: 6px dotted white;
+    border-radius: 10%;
+    padding: 10px 5px;
+    font-size: 120%;
+    letter-spacing: 2px;
+}
+
+#A {
+    background-color: blue;
+    color: yellow;
+}
+
+#B {
+    background-color: blue;
+    color: yellow;
+
 }
 
 #C {
-    
+    background-color: blue;
+    color: yellow;
+
 }
 
 #D {
-    
-} */
-/* Score Board */
+    background-color: blue;
+    color: yellow;
 
+} 
+
+/* Score Board */
 p {
     text-align: center;
     clear: both;
+    font-size: 120%;
+}
+
+/* Logo */
+
+#logo {
+    padding-left: 25%;
+}
+
+#image {
+    background: url('../images/millionaire-logo.jpg') no-repeat center center;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 100%;
+        letter-spacing: 2px;
+    }         
+    
+    #logo {
+        float: right;
+        margin-left: 15%;
+    }
+}
+@media screen and (max-width: 576px) {   
+    
+    #logo {
+            padding-left: 60px;
+        }
 }

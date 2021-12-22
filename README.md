@@ -1,26 +1,37 @@
-# Quiz Show
+# Who Wants To Be A Millionaire?
 ## Project Description
 <p> This project is a multiple choice quiz that is for people of all ages designed to test their trivia knowledge. The idea was based on the show from the 80s, Who Wants To Be a Millionaire. It focuses on general knowledge and contains questions that were asked in the show that scale with difficulty as the player gets through each question. This might encourage people to go back and look at the show to see how it became so well known.
 </p>
 
 # Features
+## Header
+* This tells the user the name of the quiz.
+
+![Screenshot](/assets/screenshots/header-screenshot.png)
+
+
 ## Question Container
 * This section shows the questions being asked to the user.
-(Add image here)
+
+![Screenshot](/assets/screenshots/question-container-screenshot.png)
 
 ## Game Area
 * This area is for the placement of the answers. 
 * The user can select an answer to the question being asked in the question container.
-(Add image here)
+
+![Screenshot](/assets/screenshots/game-area-screenshot.png)
 
 ## Score Board
 * This section shows the user the number of answers that they have gotten correct.
 * This will change as more types of farms are displayed on social media.
-(Add image here)
 
-## Results Page
-* This tells the user their overall results from the quiz.
-(Add image here)
+![Screenshot](/assets/screenshots/score-board-screenshot.png)
+
+## Logo
+* This shows a logo pertaining to the show that the site was meant to be based on.
+
+![Screenshot](/assets/screenshots/logo-screenshot.png)
+
 
 # Features left to Implement
 ## Results page
@@ -30,14 +41,14 @@
 ## Randomised Questions
 * This would've made it so different questions are asked on each attempt. This would be limited to 3 attempts.
 ## Halting Progress
-* The user would have to restart from the beginning when they got a question wrong. This could've made the game annoying to play and win so it was scrapped.
+* The user would have to restart from the beginning when they got a question wrong. This would've made the game more difficult to play through.
 
 # Testing
 ## Validator Testing
 ### HTML
-* No errors were found through W3C validator. There is one warning pertaining to line 37 because it doesn't have a header but this isn't needed because this section contains the hero image.
+* No errors or warnings were found through W3C validator.
 ### CSS
-* No errors were found through the W3C CSS validator and I was given the code for this icon to prove this.
+* No errors or warnings were found through the W3C CSS validator and I was given the code for this icon to prove this.
 <p>
     <a href="http://jigsaw.w3.org/css-validator/check/referer">
         <img style="border:0;width:88px;height:31px"
@@ -46,17 +57,22 @@
     </a>
 </p>
 
-## Accessibilty Testing (Edit this as it is required. Probably just change screenshot)
-This is a screenshot taken from my first time doing an accessibilty test on Developer Tools Lighthouse.
+### Javascript
+* JSHint returned no errors although it gave warnings that score isn't defined in the results function. This was used instead of correct which is equal to the same object. score.innertext was used instead because calling the correct from the checkAnswer function didn't work.
+
+## Accessibilty Testing
+This is a screenshot taken from doing an accessibilty test on Developer Tools Lighthouse.
+
+![Screenshot](/assets/screenshots/accessibility-screenshot.png)
 
 
-## Manual Testing (Edit this as it is required.)
+## Manual Testing
 I tested the media queries by manually adjusting the screen size from roughly 500-1000px to make sure the correct changes were taking place above or below each specific screen size.
 
-At 500px and below all text and images are displayed vertically because it fits this screen size well.
-For media queries 768px and 1000px and above, the text and images in the about and why its cool sections are displayed horizontally. The community section images are displayed side by side in pairs.
+For media queries 768px, 500px and below the text across the website is shrunk in order to maintain a clear structure on smaller screens and the logo was slightly adjusted. Media queries weren't needed at sizes larger than this.
 
 ## Unfixed Bugs
+Questions display - The choices for each question after question 1 show up below the previous question which is off-putting. This wasn't fixed due to time and lack of resources. I tried for several hours across multiple days to get help from online tutorials, friends, mentors, Slack and student support tutors who unfortunately weren't able to give me enough help to fix this problem. The code javascript code was written 3 different times which can be seen by going through the commits and all of them ended up with problems I didn't have the knowledge to solve.
 
 # Deployment
 For all of the below steps you must head to Github.
@@ -87,11 +103,11 @@ For all of the below steps you must head to Github.
 * My lecturer Simen Daehlin who helped me to better write my code and solve a couple problems I had run into.
 * The people from slack room who answered my questions when I needed it.
 * Code institute for the classes, sources and tutors that they provided me.
+* The people at student support who tried to help me for several hours.
 * Bootstrap for the media query sizes that I used: https://getbootstrap.com/docs/4.1/layout/overview/
 
 ## Content
-* Font awesome provided the icons in the footer.
+* The questions were taken from https://inews.co.uk/light-relief/quizzes/who-wants-to-be-a-millionaire-questions-quiz-jackpot-441100
 
 ## Media
-* Ex. Hero-image came from https://www.thenorthernecho.co.uk/resources/images/12262346/
-* 
+* Logo image came from https://www.google.com/url?sa=i&url=https%3A%2F%2Fstore.steampowered.com%2Fapp%2F1356240%2FWho_Wants_To_Be_A_Millionaire%2F&psig=AOvVaw2253bvTyPXLqaWtEODyEyK&ust=1640120680651000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCJig1Oej8_QCFQAAAAAdAAAAABA2
