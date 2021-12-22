@@ -10,7 +10,7 @@
     border-radius: 20%;
 }
 
-/* Button text */
+/* Question Container */
 body {
     font-size: 140%;
     letter-spacing: 4px;
@@ -18,7 +18,6 @@ body {
     background-color: #000000;
 }
 
-/* Question Container */
 #question-container {
     text-align: center;
 }
@@ -28,7 +27,7 @@ body {
     display: grid;
     grid-template-columns: repeat(2, auto);
     gap: 10px;
-    margin: 20px 0;
+    margin: 20px;
 
 }
 
@@ -36,6 +35,8 @@ button {
     border: 6px dotted white;
     border-radius: 10%;
     padding: 10px 5px;
+    font-size: 120%;
+    letter-spacing: 2px;
 }
 
 #A {
@@ -62,11 +63,13 @@ button {
 } 
 
 /* Score Board */
-
 p {
     text-align: center;
     clear: both;
+    font-size: 120%;
 }
+
+/* Logo */
 
 #logo {
     padding-left: 25%;

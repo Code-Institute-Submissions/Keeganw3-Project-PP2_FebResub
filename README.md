@@ -18,9 +18,8 @@
 * This will change as more types of farms are displayed on social media.
 (Add image here)
 
-## Results Page
-* This tells the user their overall results from the quiz.
-(Add image here)
+## Logo
+* A logo pertaining to the show that the site was meant to be based on.
 
 # Features left to Implement
 ## Results page
@@ -30,7 +29,7 @@
 ## Randomised Questions
 * This would've made it so different questions are asked on each attempt. This would be limited to 3 attempts.
 ## Halting Progress
-* The user would have to restart from the beginning when they got a question wrong. This could've made the game annoying to play and win so it was scrapped.
+* The user would have to restart from the beginning when they got a question wrong. This would've made the game more difficult to play through.
 
 # Testing
 ## Validator Testing
@@ -57,6 +56,7 @@ At 500px and below all text and images are displayed vertically because it fits 
 For media queries 768px and 1000px and above, the text and images in the about and why its cool sections are displayed horizontally. The community section images are displayed side by side in pairs.
 
 ## Unfixed Bugs
+Questions display - The choices for each question after question 1 show up below the previous question which is off-putting. This wasn't fixed due to time and lack of resources. I tried for several hours across multiple days to get help from online tutorials, friends, mentors, Slack and student support tutors who unfortunately weren't able to give me enough help to fix this problem. The code javascript code was written 3 different times which can be seen by going through the commits and all of them ended up with problems I didn't have the knowledge to solve.
 
 # Deployment
 For all of the below steps you must head to Github.
@@ -87,11 +87,11 @@ For all of the below steps you must head to Github.
 * My lecturer Simen Daehlin who helped me to better write my code and solve a couple problems I had run into.
 * The people from slack room who answered my questions when I needed it.
 * Code institute for the classes, sources and tutors that they provided me.
+* The people at student support who tried to help me for several hours.
 * Bootstrap for the media query sizes that I used: https://getbootstrap.com/docs/4.1/layout/overview/
 
 ## Content
-* Font awesome provided the icons in the footer.
+* The questions were taken from https://inews.co.uk/light-relief/quizzes/who-wants-to-be-a-millionaire-questions-quiz-jackpot-441100
 
 ## Media
-* Ex. Hero-image came from https://www.thenorthernecho.co.uk/resources/images/12262346/
-* 
+* Logo image came from https://www.google.com/url?sa=i&url=https%3A%2F%2Fstore.steampowered.com%2Fapp%2F1356240%2FWho_Wants_To_Be_A_Millionaire%2F&psig=AOvVaw2253bvTyPXLqaWtEODyEyK&ust=1640120680651000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCJig1Oej8_QCFQAAAAAdAAAAABA2
