@@ -67,3 +67,11 @@ p {
     text-align: center;
     clear: both;
 }
+
+#logo {
+    padding-left: 25%;
+}
+
+#image {
+    background: url('../images/millionaire-logo.jpg') no-repeat center center;
+}
