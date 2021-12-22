@@ -95,13 +95,11 @@ function displayQuestions(question) {
   let questionElement = document.createElement("h2");
   questionElement.innerText = question.question;
   questionContainer.appendChild(questionElement);
-  console.log(questionContainer.appendChild(questionElement));
 
   let buttonsContainer = document.createElement("div");
   buttonsContainer.id = "buttons-container";
   buttonsContainer.classList.add("buttons-container");
   questionContainer.appendChild(buttonsContainer);
-  console.log(questionContainer.appendChild(buttonsContainer));
 
   options.forEach(option => {
     let btn = document.createElement("button");
@@ -110,7 +108,6 @@ function displayQuestions(question) {
     btn.classList.add("option");
     btn.innerText = `${option} - ${question[option]}`;
     buttonsContainer.appendChild(btn);
-    console.log(buttonsContainer.appendChild(btn));
   });
   checkAnswer();
 }
@@ -146,7 +143,6 @@ function runGame() {
         results();
     } else {
         questionContainer.innerHTML = displayQuestions(questions[questionNumber]);
-        //console.log(displayQuestions(questions[questionNumber]))
     }
 }
 /**

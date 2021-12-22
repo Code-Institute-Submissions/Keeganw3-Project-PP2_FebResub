@@ -91,14 +91,9 @@ p {
         margin-left: 15%;
     }
 }
-@media screen and (max-width: 576px) {
-    button {
-        font-size: 80%;
-        letter-spacing: 2px;
-    }    
+@media screen and (max-width: 576px) {   
     
     #logo {
-            float: right;
-            margin-left: 70px;
+            padding-left: 60px;
         }
 }
