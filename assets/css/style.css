@@ -24,22 +24,43 @@ body {
 }
 
 /* Game Area */
-#A {
-    background-color: #000000;
-    color: #ffff00;
+.buttons-container {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin: 20px 0;
+
 }
 
-/*#B {
-    
+button {
+    border: 6px dotted white;
+    border-radius: 10%;
+    padding: 10px 5px;
+}
+
+#A {
+    background-color: blue;
+    color: yellow;
+}
+
+#B {
+    background-color: blue;
+    color: yellow;
+
 }
 
 #C {
-    
+    background-color: blue;
+    color: yellow;
+
 }
 
 #D {
-    
-} */
+    background-color: blue;
+    color: yellow;
+
+} 
+
 /* Score Board */
 
 p {
