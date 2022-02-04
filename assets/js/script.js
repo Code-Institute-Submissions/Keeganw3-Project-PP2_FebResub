@@ -81,7 +81,7 @@ const questions = [{
     }
 ]
 
-let questionNumber = 0;
+let questionNumber = -1;
 
 /**
  * This function displays the questions and possible answers for
