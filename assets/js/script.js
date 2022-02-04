@@ -58,7 +58,7 @@ const questions = [{
     {
         'question': 'A character named Ralph is elected leader of a group of boys at the beginning of which book?',
         'A': 'Lord of the Flies',
-        'B': 'A CLockwork Orange',
+        'B': 'A Clockwork Orange',
         'C': 'The Jungle Book',
         'D': 'Brave New World',
         'correctAnswer': 'A'
@@ -82,7 +82,6 @@ const questions = [{
 ]
 
 let questionNumber = 0;
-questionContainer.innerHTML = displayQuestions(questions[questionNumber])
 
 /**
  * This function displays the questions and possible answers for
@@ -91,7 +90,7 @@ questionContainer.innerHTML = displayQuestions(questions[questionNumber])
 
 function displayQuestions(question) {
   const options = ["A", "B", "C", "D"];
-
+  questionContainer.innerHTML = ""
   let questionElement = document.createElement("h2");
   questionElement.innerText = question.question;
   questionContainer.appendChild(questionElement);
@@ -111,7 +110,7 @@ function displayQuestions(question) {
   });
   checkAnswer();
 }
-displayQuestions(questions[questionNumber]);
+
 /**
  * This function checks if the answer chosen is correct and 
  * increases the number of correct or incorrect answers.
@@ -142,7 +141,7 @@ function runGame() {
     if (questions.length == questionNumber) {
         results();
     } else {
-        questionContainer.innerHTML = displayQuestions(questions[questionNumber]);
+        displayQuestions(questions[questionNumber]);
     }
 }
 /**
@@ -162,3 +161,5 @@ function results() {
     }
     document. location. reload()
 }
+
+runGame();
