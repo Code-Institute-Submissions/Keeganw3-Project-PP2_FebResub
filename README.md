@@ -9,6 +9,8 @@
 
 ![Screenshot](/assets/screenshots/header-screenshot.png)
 
+## Reset Button
+* This allows the user to reset the quiz at anytime.
 
 ## Question Container
 * This section shows the questions being asked to the user.
@@ -74,10 +76,12 @@ For media queries, 768px, 500px, and below the text across the website is shrunk
 ## Usability Testing
 After I deployed this site I had friends and family test the usabliity of the website
 
-The first user asked to be able to see which question they were on. I fixed this by placing the question number in each question.
+The first user asked to be able to see which question they were on. This was fixed by placing the question number in each question's text.
+
+Another user asked for a way to restart the quiz at any time while they're going through it. This was fixed by adding a rest button above the question to make it easy for the user to see.
 
 ## Unfixed Bugs
-Questions display - The choices for each question after question 1 show up below the previous question which is off-putting. This wasn't fixed due to time and lack of resources. I tried for several hours across multiple days to get help from online tutorials, friends, mentors, Slack and student support tutors who unfortunately weren't able to give me enough help to fix this problem. The code javascript code was written 3 different times which can be seen by going through the commits and all of them ended up with problems I didn't have the knowledge to solve.
+Questions display - The choices for each question after question 1 show up below the previous question which is off-putting. This wasn't fixed due to time and lack of resources. I tried for several hours across multiple days to get help from online tutorials, friends, mentors, Slack and student support tutors who unfortunately weren't able to give me enough help to fix this problem. The javascript code was written 3 different times which can be seen by going through the commits and all of them ended up with problems I didn't have the knowledge to solve.
 
 # Deployment
 For all of the below steps, you must head to Github.

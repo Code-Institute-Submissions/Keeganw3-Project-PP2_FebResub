@@ -107,6 +107,7 @@ function displayQuestions(question) {
     btn.classList.add("option");
     btn.innerText = `${option} - ${question[option]}`;
     buttonsContainer.appendChild(btn);
+
   });
 }
 
