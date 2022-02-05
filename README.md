@@ -73,6 +73,8 @@ I tested the media queries by manually adjusting the screen size from roughly 50
 
 For media queries, 768px, 500px, and below the text across the website is shrunk to maintain a clear structure on smaller screens and the logo was slightly adjusted. Media queries at sizes larger than this were only needed for the reset button to stay centred because the rest of the website was able to fill out the screen at these sizes well.
 
+When checking the app on mobile I noticed that the font size was too large for both the header and questions making it so the user would need to scroll right to see the full question. This was fixed by shrinking the size of the text by 10%.
+
 ## Usability Testing
 After I deployed this site I had friends and family test the usabliity of the website
 
