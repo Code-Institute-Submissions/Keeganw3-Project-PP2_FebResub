@@ -79,7 +79,7 @@ const questions = [{
         'D': 'Octagon',
         'correctAnswer': 'D'
     }
-]
+];
 
 let questionNumber = -1;
 
@@ -90,7 +90,7 @@ let questionNumber = -1;
 
 function displayQuestions(question) {
   const options = ["A", "B", "C", "D"];
-  questionContainer.innerHTML = ""
+  questionContainer.innerHTML = "";
   let questionElement = document.createElement("h2");
   questionElement.innerText = question.question;
   questionContainer.appendChild(questionElement);
@@ -142,6 +142,7 @@ function runGame() {
         displayQuestions(questions[questionNumber]);
     }
 }
+
 /**
  * This code will give your results from the quiz based 
  * on the number of correct answers.
@@ -157,7 +158,7 @@ function results() {
     } else {
         alert("You answered " + score.innerText + " answers correctly! I'm impressed you got so many wrong.");
     }
-    document. location. reload()
+    document. location. reload();
 }
 
 runGame();
