@@ -1,6 +1,6 @@
 const questionContainer = document.getElementById('question-container');
 const questions = [{
-        'question': "Since 2011, Brendan O'Carroll has played the title character in what sitcom?",
+        'question': "1. Since 2011, Brendan O'Carroll has played the title character in what sitcom?",
         'A': "Mrs. Brown's Boys",
         'B': "Mrs. Brown's Babes",
         'C': "Mrs. Brown's Baboons",
@@ -8,7 +8,7 @@ const questions = [{
         'correctAnswer': 'A'
     },
     {
-        'question': 'Which of these is a breed of spaniel?',
+        'question': '2. Which of these is a breed of spaniel?',
         'A': 'King James',
         'B': 'King John',
         'C': 'King Charles',
@@ -16,7 +16,7 @@ const questions = [{
         'correctAnswer': 'C'
     },
     {
-        'question': 'According to Robert Burns, which food is the “Great chieftain o the pudding-race”?',
+        'question': '3. According to Robert Burns, which food is the “Great chieftain o the pudding-race”?',
         'A': 'Teacake',
         'B': 'Haggis',
         'C': 'Bacon roll',
@@ -24,7 +24,7 @@ const questions = [{
         'correctAnswer': 'B'
     },
     {
-        'question': "What is the name of the character played by Daisy Ridley in 'Star Wars: The Rise of Skywalker'?",
+        'question': "4. What is the name of the character played by Daisy Ridley in 'Star Wars: The Rise of Skywalker'?",
         'A': 'Doh',
         'B': 'Rey',
         'C': 'Mee',
@@ -32,7 +32,7 @@ const questions = [{
         'correctAnswer': 'B'
     },
     {
-        'question': 'Which of these is the title of a famous artwork by Tracey Emin?',
+        'question': '5. Which of these is the title of a famous artwork by Tracey Emin?',
         'A': 'Our Settee',
         'B': 'Your Bench',
         'C': 'Her Desk',
@@ -40,7 +40,7 @@ const questions = [{
         'correctAnswer': 'D'
     },
     {
-        'question': 'The annual half-marathon the Great North Run starts in which UK city?',
+        'question': '6. The annual half-marathon the Great North Run starts in which UK city?',
         'A': 'Newscastle',
         'B': 'Sheffield',
         'C': 'Liverpool',
@@ -48,7 +48,7 @@ const questions = [{
         'correctAnswer': 'A'
     },
     {
-        'question': 'For what reason did Professor Robert Kelly gain internet fame in 2017?',
+        'question': '7. For what reason did Professor Robert Kelly gain internet fame in 2017?',
         'A': 'Mistaken identity on news',
         'B': 'Chasing after his dog',
         'C': 'Kids gatecrashed interview',
@@ -56,7 +56,7 @@ const questions = [{
         'correctAnswer': 'C'
     },
     {
-        'question': 'A character named Ralph is elected leader of a group of boys at the beginning of which book?',
+        'question': '8. A character named Ralph is elected leader of a group of boys at the beginning of which book?',
         'A': 'Lord of the Flies',
         'B': 'A Clockwork Orange',
         'C': 'The Jungle Book',
@@ -64,7 +64,7 @@ const questions = [{
         'correctAnswer': 'A'
     },
     {
-        'question': "In Hokusai's print 'The Great Wave', which mountain is depicted in the background?",
+        'question': "9. In Hokusai's print 'The Great Wave', which mountain is depicted in the background?",
         'A': 'Mount Emei',
         'B': 'Mount Kailash',
         'C': 'Mount Fuji',
@@ -72,7 +72,7 @@ const questions = [{
         'correctAnswer': 'C'
     },
     {
-        'question': "According to the Highway Code, what shape is the standard sign giving the order to 'Stop'?",
+        'question': "10. According to the Highway Code, what shape is the standard sign giving the order to 'Stop'?",
         'A': 'Pentagon',
         'B': 'Hexagon',
         'C': 'Heptagon',
