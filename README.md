@@ -71,7 +71,7 @@ This is a screenshot taken from doing an accessibility test on Developer Tools L
 ## Manual Testing
 I tested the media queries by manually adjusting the screen size from roughly 500-1000px to make sure the correct changes were taking place above or below each specific screen size.
 
-For media queries, 768px, 500px, and below the text across the website is shrunk to maintain a clear structure on smaller screens and the logo was slightly adjusted. Media queries weren't needed at sizes larger than this because it was able to fill the screen well.
+For media queries, 768px, 500px, and below the text across the website is shrunk to maintain a clear structure on smaller screens and the logo was slightly adjusted. Media queries at sizes larger than this were only needed for the reset button to stay centred because the rest of the website was able to fill out the screen at these sizes well.
 
 ## Usability Testing
 After I deployed this site I had friends and family test the usabliity of the website

@@ -141,7 +141,7 @@ p {
     
     #logo {
         float: right;
-        margin-left: 15%;
+        margin-left: 5%;
     }
 
     .reset {
@@ -153,7 +153,7 @@ p {
 @media screen and (max-width: 576px) {   
     
     #logo {
-            padding-left: 60px;
+            padding-left: 15%;
         }
 
     .reset {
