@@ -119,6 +119,20 @@ p {
 }
 
 /* Media Queries */
+@media screen and (max-width: 1200px) {
+    .reset {
+        padding-left: 40%;
+        padding-top: 3%;
+    }
+}
+
+@media screen and (max-width: 992px) {   
+    .reset {
+        padding-left: 40%;
+        padding-top: 3%;
+    }
+}
+
 @media screen and (max-width: 768px) {
     body {
         font-size: 100%;
@@ -129,10 +143,21 @@ p {
         float: right;
         margin-left: 15%;
     }
+
+    .reset {
+        padding-left: 38%;
+        padding-top: 3%;
+    }
 }
+
 @media screen and (max-width: 576px) {   
     
     #logo {
             padding-left: 60px;
         }
+
+    .reset {
+        padding-left: 37%;
+        padding-top: 3%;
+    }
 }
