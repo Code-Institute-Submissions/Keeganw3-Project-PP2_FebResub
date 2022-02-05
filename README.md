@@ -10,7 +10,7 @@
 ![Screenshot](/assets/screenshots/header-screenshot.png)
 
 ## Reset Button
-* This allows the user to reset the quiz at anytime.
+* This allows the user to reset the quiz at any time.
 
 ## Question Container
 * This section shows the questions being asked to the user.
@@ -76,11 +76,11 @@ For media queries, 768px, 500px, and below the text across the website is shrunk
 When checking the app on mobile I noticed that the font size was too large for both the header and questions making it so the user would need to scroll right to see the full question. This was fixed by shrinking the size of the text by 10%.
 
 ## Usability Testing
-After I deployed this site I had friends and family test the usabliity of the website
+After I deployed this site I had friends and family test the usability of the website
 
 The first user asked to be able to see which question they were on. This was fixed by placing the question number in each question's text.
 
-Another user asked for a way to restart the quiz at any time while they're going through it. This was fixed by adding a rest button above the question to make it easy for the user to see.
+Another user asked for a way to restart the quiz at any time while they're going through it. This was fixed by adding a reset button above the question to make it easy for the user to see.
 
 # Deployment
 For all of the below steps, you must head to Github.
