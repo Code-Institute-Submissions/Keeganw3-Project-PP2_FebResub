@@ -45,6 +45,21 @@
 ## Halting Progress
 * The user would have to restart from the beginning when they got a question wrong. This would've made the game more difficult to play through.
 
+# Technologies Used
+* HTML - A mark-up language that uses semantic structures.
+* CSS - Cascade style sheets are used to style the quiz and website.
+* Javascript - Programming language used to make the quiz.
+* Gitpod - Used as a platform for writing code. The command line commits and pushes to GitHub.
+* GitHub - Hosts this repository.
+
+## Design
+* W3C HTML Validator - For cleaning and correcting HTML code.
+* CSS Validator - For cleaning and correcting CSS code.
+* JSHint - For cleaning and correcting Javascript code.
+* Google Chrome Dev Tools - Used for Lighthouse to check and improve the website's accessability.
+* WCAG Contrast Checker - For choosing accessible colours.
+* Grammerly - For checking spelling and grammer.
+
 # Testing
 ## Validator Testing
 ### HTML
