@@ -152,6 +152,11 @@ p {
 
 @media screen and (max-width: 576px) {   
     
+    body {
+        font-size: 90%;
+        letter-spacing: 2px;
+    }
+
     #logo {
             padding-left: 15%;
         }

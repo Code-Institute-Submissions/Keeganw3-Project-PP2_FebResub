@@ -80,9 +80,6 @@ The first user asked to be able to see which question they were on. This was fix
 
 Another user asked for a way to restart the quiz at any time while they're going through it. This was fixed by adding a rest button above the question to make it easy for the user to see.
 
-## Unfixed Bugs
-Questions display - The choices for each question after question 1 show up below the previous question which is off-putting. This wasn't fixed due to time and lack of resources. I tried for several hours across multiple days to get help from online tutorials, friends, mentors, Slack and student support tutors who unfortunately weren't able to give me enough help to fix this problem. The javascript code was written 3 different times which can be seen by going through the commits and all of them ended up with problems I didn't have the knowledge to solve.
-
 # Deployment
 For all of the below steps, you must head to Github.
 * Log into Github
