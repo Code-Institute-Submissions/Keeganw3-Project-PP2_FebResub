@@ -108,7 +108,6 @@ function displayQuestions(question) {
     btn.innerText = `${option} - ${question[option]}`;
     buttonsContainer.appendChild(btn);
   });
-  checkAnswer();
 }
 
 /**
@@ -137,7 +136,6 @@ function checkAnswer(e) {
 
 function runGame() {
     questionNumber++;
-    console.log(questionNumber);
     if (questions.length == questionNumber) {
         results();
     } else {
