@@ -95,7 +95,14 @@ After I deployed this site I had friends and family test the usability of the we
 
 The first user asked to be able to see which question they were on. This was fixed by placing the question number in each question's text.
 
-Another user asked for a way to restart the quiz at any time while they're going through it. This was fixed by adding a reset button above the question to make it easy for the user to see.
+Another user asked for a way to restart the quiz at any time while they're going through it. This was addressed by adding a reset button above the question to make it easy for the user to see.
+
+### What I think a user may have wanted:
+* A way to keep track of the number of correct answers - added a scoreboard
+* A way of knowing which button the user was on - added this by making buttons change colour when a mouse hovers over it.
+* A confirmation for when an answer for a question is chosen - added an alert that comes up for each question when an answer is clicked.
+* A way to view their results - added an alert at the top of the page telling them how well they did.
+* A way to contact the site owner if they discover a bug - added a footer with relevant contact information.
 
 # Deployment
 For all of the below steps, you must head to Github.
