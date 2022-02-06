@@ -12,6 +12,8 @@
 ## Reset Button
 * This allows the user to reset the quiz at any time.
 
+![Screenshot](/assets/screenshots/reset-button-screenshot.jpg)
+
 ## Question Container
 * This section shows the questions being asked to the user.
 
@@ -34,6 +36,10 @@
 
 ![Screenshot](/assets/screenshots/logo-screenshot.png)
 
+## Footer
+* This displays the website's relevant contact information if the user wants to reach out to the developer.
+
+![Screenshot](/assets/screenshots/footer-screenshot.jpg)
 
 # Features left to Implement
 ## Results page
