@@ -1,4 +1,5 @@
 /* Header */
+
 .heading {
     text-align: center;
     letter-spacing: 6px;
@@ -11,6 +12,7 @@
 }
 
 /* Question Container */
+
 body {
     font-size: 140%;
     letter-spacing: 4px;
@@ -23,6 +25,7 @@ body {
 }
 
 /* Game Area */
+
 .buttons-container {
     display: grid;
     grid-template-columns: repeat(2, auto);
@@ -102,6 +105,7 @@ button {
 
 
 /* Score Board */
+
 p {
     text-align: center;
     clear: both;
@@ -118,7 +122,22 @@ p {
     background: url('../images/millionaire-logo.jpg') no-repeat center center;
 }
 
+/* footer */
+
+footer {
+    height: 50px;
+}
+
+.social-networks {
+    text-align: center;
+}
+
+.social-networks > span {
+    font-size: 60%;
+}
+
 /* Media Queries */
+
 @media screen and (max-width: 1200px) {
     .reset {
         padding-left: 40%;
